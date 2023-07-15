@@ -1,0 +1,86 @@
+.body {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("./bg2.jpg");
+  background-size: cover;
+  height: 100vh;
+  background-position: center;
+}
+
+.content-text {
+  margin-left: 2rem;
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  animation: text-content;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes text-content {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 0%;
+  }
+}
+
+.content-text .home-title {
+  font-family: arial;
+  font-size: 3rem;
+  color: #fff;
+}
+
+.content-text .home-desc {
+  font-family: arial;
+  font-size: 1rem;
+  margin: 0.5rem 0.8rem;
+  color: #f5f5f5;
+}
+
+.home-btn {
+  display: flex;
+  gap: 1rem;
+  margin: 1rem 0.8rem;
+}
+.home-btn button {
+  width: 200px;
+  cursor: pointer;
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 30px;
+  padding: 1rem;
+  font-size: 20px;
+  transition: all 0.3s ease;
+}
+button:hover {
+  color: #009697;
+  background-color: #fff;
+  transform: scale(0.9);
+}
+
+@media screen and (max-width: 400px) {
+  .content-text .home-title {
+    font-size: 40px;
+  }
+  .content-text {
+    margin-left: 0.5rem;
+    padding: 3rem 2rem;
+  }
+  .home-btn button {
+    width: 120px;
+    padding: 0.6rem;
+    border-radius: 10px;
+    font-size: 14px;
+  }
+  h1 {
+    font-size: 1rem;
+  }
+}
+
+.modal-scroll-container {
+  max-height: 400px;
+  overflow-y: auto;
+}

@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "name": "T-Shirt",
+    "price": 7.99,
+    "imgUrl": "/assets/img1.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Jacket",
+    "price": 18.99,
+    "imgUrl": "/assets/im2.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Red Nike",
+    "price": 25,
+    "imgUrl": "/assets/img3.jpg"
+  },
+  {
+    "id": 4,
+    "name": "PS5 Console",
+    "price": 720.99,
+    "imgUrl": "/assets/img4.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Jeans (5x Combo)",
+    "price": 76,
+    "imgUrl": "/assets/im5.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Plain Shirt",
+    "price": 11.99,
+    "imgUrl": "/assets/img6.jpg"
+  },
+  {
+    "id": 7,
+    "name": "Nike Canvas",
+    "price": 32,
+    "imgUrl": "/assets/img7.jpg"
+  },
+  {
+    "id": 8,
+    "name": "Brown Jacket",
+    "price": 40.99,
+    "imgUrl": "/assets/img8.jpg"
+  },
+  {
+    "id": 9,
+    "name": "Rolex Watch",
+    "price": 92,
+    "imgUrl": "/assets/img9.jpg"
+  },
+  {
+    "id": 10,
+    "name": "Nike Sneakers",
+    "price": 29,
+    "imgUrl": "/assets/img10.jpg"
+  },
+  {
+    "id": 11,
+    "name": "Blue Jeans",
+    "price": 14.99,
+    "imgUrl": "/assets/img11.jpg"
+  },
+  {
+    "id": 12,
+    "name": "White Canvas",
+    "price": 13.99,
+    "imgUrl": "/assets/img12.jpg"
+  },
+  {
+    "id": 13,
+    "name": "PS4 Controller",
+    "price": 23,
+    "imgUrl": "/assets/img13.jpg"
+  },
+  {
+    "id": 14,
+    "name": "PS5 Controller",
+    "price": 41.99,
+    "imgUrl": "/assets/img14.jpg"
+  },
+  {
+    "id": 15,
+    "name": "FIFA 23 (PS5)",
+    "price": 49,
+    "imgUrl": "/assets/img15.jpg"
+  }
+]

@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Jeans",
+    "price": 10.99
+  },
+  {
+    "name": "Jacket",
+    "price": 21.99
+  },
+  {
+    "name": "Nike",
+    "price": 29.0
+  },
+  {
+    "name": "Crocs",
+    "price": 16.99
+  },
+  {
+    "name": "Coat",
+    "price": 38.99
+  }
+]
