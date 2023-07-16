@@ -40,7 +40,7 @@ function Navbar() {
           <Nav className="mr-auto" style={{ marginLeft: "4rem" }}>
             <Nav.Link href="/">Home</Nav.Link>
             <Nav.Link href="/shopping-cart">Cart</Nav.Link>
-            <Nav.Link href="/products">Products</Nav.Link>
+            <Nav.Link href="/product">Products</Nav.Link>
           </Nav>
           <Button
             variant="outline-success"
