@@ -11,6 +11,7 @@ import { useState } from "react";
 import searchItems from "../data/items.json";
 import Item from "./Item";
 import "../App.css";
+import { NavLink } from "react-router-dom";
 
 function Navbar() {
   const [searchValue, setSearchValue] = useState<string>("");
@@ -27,7 +28,7 @@ function Navbar() {
   return (
     <>
       <NavbarBs
-        bg="light"
+        bg="white"
         className="w-100 shadow-sm"
         style={{ padding: "1rem" }}
         expand="lg"
@@ -38,9 +39,15 @@ function Navbar() {
         <NavbarBs.Toggle aria-controls="basic-navbar-nav" />
         <NavbarBs.Collapse id="basic-navbar-nav">
           <Nav className="mr-auto" style={{ marginLeft: "4rem" }}>
-            <Nav.Link href="/">Home</Nav.Link>
-            <Nav.Link href="/shopping-cart">Cart</Nav.Link>
-            <Nav.Link href="/product">Products</Nav.Link>
+            <Nav.Link to="/" as={NavLink}>
+              Home
+            </Nav.Link>
+            <Nav.Link to="/cart" as={NavLink}>
+              Cart
+            </Nav.Link>
+            <Nav.Link to="/products" as={NavLink}>
+              Products
+            </Nav.Link>
           </Nav>
           <Button
             variant="outline-success"
