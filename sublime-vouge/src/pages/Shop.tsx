@@ -1,9 +1,9 @@
 import { Row, Col } from "react-bootstrap";
-import storeItems from "../data/products.json";
+import storeItems from "../data/shopItems.json";
 import { StoreItem } from "../components/StoreItem";
 import "../App.css";
 
-export default function Product() {
+export function Shop() {
   return (
     <>
       <h1 className="m-3">Shop our Exquisite Collection Today!</h1>

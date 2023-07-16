@@ -8,7 +8,7 @@ import {
   Modal,
 } from "react-bootstrap";
 import { useState } from "react";
-import Products from "../data/items.json";
+import searchItems from "../data/items.json";
 import Item from "./Item";
 import "../App.css";
 
@@ -20,14 +20,9 @@ function Navbar() {
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
 
-  // const handleSearch = (e: React.FormEvent<HTMLFormElement>) => {
-  //   e.preventDefault();
-  //   setSearchValue(e.currentTarget.value);
-  // };
-
-  // const clearSearch = () => {
-  //   setSearchValue("");
-  // };
+  const modalClick = () => {
+    window.location.pathname = "/shopping-cart";
+  };
 
   return (
     <>
@@ -44,9 +39,8 @@ function Navbar() {
         <NavbarBs.Collapse id="basic-navbar-nav">
           <Nav className="mr-auto" style={{ marginLeft: "4rem" }}>
             <Nav.Link href="/">Home</Nav.Link>
-            <Nav.Link href="/order">Order</Nav.Link>
+            <Nav.Link href="/shopping-cart">Cart</Nav.Link>
             <Nav.Link href="/products">Products</Nav.Link>
-            <Nav.Link href="/about">About</Nav.Link>
           </Nav>
           <Button
             variant="outline-success"
@@ -69,18 +63,23 @@ function Navbar() {
                 onChange={(e) => setSearchValue(e.target.value)}
               />
               <Row className="d-flex flex-column" style={{}}>
-                {Products.filter((product) =>
-                  product.name.toLowerCase().includes(searchValue.toLowerCase())
-                ).map((item) => (
-                  <Col
-                    style={{
-                      borderBottom: "1px solid gray",
-                      marginTop: ".5rem",
-                    }}
-                  >
-                    <Item {...item} />
-                  </Col>
-                ))}
+                {searchItems
+                  .filter((searchItem) =>
+                    searchItem.name
+                      .toLowerCase()
+                      .includes(searchValue.toLowerCase())
+                  )
+                  .map((item) => (
+                    <Col
+                      style={{
+                        borderBottom: "1px solid gray",
+                        marginTop: ".5rem",
+                      }}
+                      onClick={modalClick}
+                    >
+                      <Item {...item} />
+                    </Col>
+                  ))}
               </Row>
             </Modal.Body>
             <Modal.Footer>
